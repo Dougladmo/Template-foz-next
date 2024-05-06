@@ -6,7 +6,7 @@ import {Fade} from 'react-awesome-reveal'
 
 export default function Home() {
   return (
-    <main id="main" className="flex flex-col gap-24">
+    <main id="main" className="flex flex-col gap-20">
       <Fade cascade>
         <div id="about" className="px-4 pt-5 flex flex-col items-center">
           <Image
