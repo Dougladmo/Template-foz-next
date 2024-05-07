@@ -1,0 +1,32 @@
+@media (min-width:768px) {
+  #about {
+    position: relative;
+    min-height: 80vh;
+    /* Garante que o conteúdo preencha toda a altura da janela de visualização */
+  }
+
+  #about::before {
+    content: "";
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 42%;
+    height: 100%;
+    background-image: url('/asset 11.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -100;
+    animation: parallax 3s infinite alternate;
+  }
+
+  @keyframes parallax {
+    0% {
+      transform: translateY(-5%);
+    }
+
+    100% {
+      transform: translateY(2%);
+    }
+  }
+}

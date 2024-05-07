@@ -11,7 +11,7 @@ const Header = () => {
   const [offCanvas, setOffCanvas] = useState(false)
   
   const toggleOffCanvas = () => {
-    setOffCanvas(!offCanvas);
+    offCanvas ? setOffCanvas(false) : setOffCanvas(true)
   }
 
   return (
