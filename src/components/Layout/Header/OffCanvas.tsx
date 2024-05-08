@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const OffCanvas = () => {
@@ -5,34 +6,34 @@ const OffCanvas = () => {
         <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen'>
             <ul className='text-white-default text-xs uppercase'>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
-                    <a href="#">
+                    <Link href="#">
                         Institucional
-                    </a>
+                    </Link>
                 </li>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
-                    <a href="#">
+                    <Link href="#">
                         áreas de atuação
-                    </a>
+                    </Link>
                 </li>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
-                    <a href="#">
+                    <Link href="#">
                         advogados
-                    </a>
+                    </Link>
                 </li>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
-                    <a href="#">
+                    <Link href="#">
                         artigos
-                    </a>
+                    </Link>
                 </li>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
-                    <a href="#">
+                    <Link href="#">
                         notícias
-                    </a>
+                    </Link>
                 </li>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
-                    <a href="#">
+                    <Link href="#">
                         contato
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
