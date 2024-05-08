@@ -16,9 +16,9 @@ const MidBar = ({ handleOnClick }: MidBarProps) => {
           <Image
             alt="Logo Foz advogados"
             src={'/Logo50anos.png'}
-            width={360}
-            height={80}
-            className="w-3/4 hover:opacity-60 transition duration-500 cursor-pointer"
+            width={250}
+            height={250}
+            className="hover:opacity-60 transition duration-500 cursor-pointer"
           />
           <nav className="flex gap-3 items-center text-gray-500 pr-2">
             <IoMenuOutline
