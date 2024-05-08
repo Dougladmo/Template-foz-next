@@ -9,19 +9,19 @@ const TopBar = () => {
         <div className='max-w-5xl mx-auto flex justify-between items-center'>
             <ul className='flex items-center gap-2'>
                 <li className=''>
-                    <a href="#">
+                    <Link href="#">
                         <FaFacebook size={18} className='text-gray-700 hover:text-blue-950 transition duration-300 cursor-pointer' />
-                    </a>
+                    </Link>
                 </li>
                 <li className='border-x-[1px] px-2 border-gray-400 py-2'>
-                    <a href="#">
+                    <Link href="#">
                         <SiGmail size={18} className='text-gray-700 hover:text-blue-950 transition duration-300 cursor-pointer' />
-                    </a>
+                    </Link>
                 </li>
                 <li className=''>
-                    <a href="#">
+                    <Link href="#">
                         <FaLinkedin size={18} className='text-gray-700 hover:text-blue-950 transition duration-300 cursor-pointer' />
-                    </a>
+                    </Link>
                 </li>
             </ul>
             <div className='md:flex md:gap-28 md:items-center'>
