@@ -7,7 +7,7 @@ const OffCanvas = () => {
             <ul className='text-white-default text-xs uppercase'>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
                     <Link href="#">
-                        Institucional
+                        Instituciona
                     </Link>
                 </li>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
