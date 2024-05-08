@@ -14,7 +14,7 @@ export default function Home() {
       <div id="about" className="px-4 pt-5 flex flex-col md:flex-row items-center md:justify-end md:self-end md:w-1/2">
         <Fade cascade triggerOnce>
           <Image
-            src='/asset 1.png'
+            src='/LogoGrande.png'
             width={300}
             height={250}
             className="w-full mb-7 md:hidden"
@@ -35,8 +35,8 @@ export default function Home() {
             <p className="text-sm lg:text-base text-justify leading-7 text-white-default mb-5">A comunicação está cada vez mais globalizada, razão pela qual disponibilizamos novos canais de atendimento. Atualmente contamos com uma equipe especializada no atendimento online (pronto atendimento), disposta a prestar esclarecimentos sobre andamentos processuais de nossos clientes.</p>
             <Link href="#" className="bg-white-default text-blue-800 px-6 py-3 rounded-lg hover:bg-blue-800 hover:text-white-default transition duration-300 border-white-default border-[1px]">Saiba mais</Link>
           </div>
-          <FaSquareFull size={50} className="absolute md:hidden -bottom-5 rotate-45 left-1/2 -translate-x-1/2 text-blue-800" />
-          <FaSquareFull size={50} className="absolute hidden md:flex rotate-45 -right-5 text-blue-800 top-1/2 -translate-y-1/2" />
+          <FaSquareFull size={40} className="absolute md:hidden -bottom-3 rotate-45 left-1/2 -translate-x-1/2 text-blue-800" />
+          <FaSquareFull size={40} className="absolute hidden md:flex rotate-45 -right-3 text-blue-800 top-1/2 -translate-y-1/2" />
         </div>
       </Fade>
     </main>

@@ -6,10 +6,10 @@ const BottomBar = () => {
     return (
         <div className='flex flex-col md:flex-row md:gap-1 gap-[1px] bg-white-default'>
             <Fade cascade className='w-full'>
-                <div className="w-full h-[114px] md:h-[80vh] relative overflow-hidden md:rounded-r-lg">
+                <div className="w-full h-[114px] md:h-[560px] relative overflow-hidden md:rounded-r-lg">
                     <div className="absolute inset-0 bg-blue-900"></div>
                     <img
-                        src="/asset%208.jpeg"
+                        src="/adm.jpeg"
                         alt="Imagem de fundo"
                         className="object-cover w-full h-full"
                     />
@@ -22,10 +22,10 @@ const BottomBar = () => {
                         <h2 className="uppercase font-bold text-2xl md:text-3xl text-center cursor-pointer">Administrativo</h2>
                     </div>
                 </div>
-                <div className="w-full h-[114px] md:h-[80vh] relative overflow-hidden md:rounded-lg">
+                <div className="w-full h-[114px] md:h-[560px] relative overflow-hidden md:rounded-lg">
                     <div className="absolute inset-0 bg-blue-900"></div>
                     <img
-                        src="/asset%209.jpeg"
+                        src="/trib.jpeg"
                         alt="Imagem de fundo"
                         className="object-cover w-full h-full"
                     />
@@ -39,10 +39,10 @@ const BottomBar = () => {
                     </div>
                 </div>
                 {/* #133041 */}
-                <div className="w-full h-[114px] md:h-[80vh] relative overflow-hidden md:rounded-l-lg">
+                <div className="w-full h-[114px] md:h-[560px] relative overflow-hidden md:rounded-l-lg">
                     <div className="absolute inset-0 bg-blue-900"></div>
                     <img
-                        src="/asset%2010.jpeg"
+                        src="/civil.jpeg"
                         alt="Imagem de fundo"
                         className="object-cover w-full h-full"
                     />

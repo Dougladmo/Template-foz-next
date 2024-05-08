@@ -5,7 +5,7 @@ import { IoMenuOutline, IoSearch } from 'react-icons/io5';
 import { Fade } from 'react-awesome-reveal'
 
 interface MidBarProps {
-  handleOnClick: React.MouseEventHandler<HTMLElement | SVGElement>;
+  handleOnClick: React.MouseEventHandler<SVGElement>;
 }
 
 const MidBar = ({ handleOnClick }: MidBarProps) => {
@@ -15,7 +15,7 @@ const MidBar = ({ handleOnClick }: MidBarProps) => {
         <Fade duration={1000}>
           <Image
             alt="Logo Foz advogados"
-            src={'/asset 0.png'}
+            src={'/Logo50anos.png'}
             width={360}
             height={80}
             className="w-3/4 hover:opacity-60 transition duration-500 cursor-pointer"
