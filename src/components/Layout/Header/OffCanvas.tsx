@@ -1,11 +1,8 @@
 import React from 'react'
 
-import { Slide } from 'react-awesome-reveal'
-
 const OffCanvas = () => {
   return (
-    <Slide className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen'>
-        <div>
+        <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen'>
             <ul className='text-white-default text-xs uppercase'>
                 <li className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150'>
                     <a href="#">
@@ -39,7 +36,6 @@ const OffCanvas = () => {
                 </li>
             </ul>
         </div>
-    </Slide>
   )
 }
 

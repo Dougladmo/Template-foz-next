@@ -5,6 +5,7 @@ import TopBar from './TopBar';
 import MidBar from './MidBar';
 import BottomBar from './BottomBar';
 import OffCanvas from './OffCanvas';
+import { Slide } from 'react-awesome-reveal';
 
 
 const Header = () => {
@@ -20,7 +21,9 @@ const Header = () => {
         (
           <>
             <div onClick={toggleOffCanvas} className='absolute z-10 h-screen w-screen bg-[#00000066]'></div>
+            <Slide direction='left' className='fixed left-0 z-30 w-full' >
               <OffCanvas /> 
+            </Slide>
           </>
         ) 
       : 
