@@ -20,7 +20,7 @@ const Header = () => {
       { offCanvas ? 
         (
           <>
-            <div onClick={toggleOffCanvas} className='absolute z-10 h-screen w-screen bg-[#00000066]'></div>
+            <div onClick={toggleOffCanvas} className='absolute z-10 h-screen w-screen bg-[#00000066] lg:hidden'></div>
             <Slide direction='left' className='fixed left-0 z-30 w-full' >
               <OffCanvas /> 
             </Slide>

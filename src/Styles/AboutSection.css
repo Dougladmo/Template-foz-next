@@ -1,7 +1,7 @@
 @media (min-width:768px) {
   #about {
     position: relative;
-    min-height: 80vh;
+    min-height: 50vh;
     /* Garante que o conteúdo preencha toda a altura da janela de visualização */
   }
 
