@@ -11,7 +11,7 @@ interface MidBarProps {
 
 const MidBar = ({ handleOnClick }: MidBarProps) => {
   return (
-    <div className='bg-white-default w-full'>
+    <div className='bg-white w-full'>
       <div id="mid-header" className="md:max-w-6xl md:px-3 md:mx-auto px-3 py-5 flex items-center justify-between lg:justify-center">
         <Fade duration={1000}>
           <Image

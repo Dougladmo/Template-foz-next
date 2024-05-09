@@ -14,12 +14,6 @@ const config: Config = {
         'civil': "url(/asset 8.jpeg)",
       },
      colors: {
-      black: '#000000',
-      transparent: 'transparent',
-      white: {
-        default: '#ffffff',
-        transparent: '#ffffff99'
-      },
       blue: {
         800: '#013148',
         950: '#00222F',

@@ -4,7 +4,7 @@ import React from 'react'
 const OffCanvas = () => {
   return (
         <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen lg:hidden'>
-            <div className='text-white-default text-xs uppercase flex flex-col'>
+            <div className='text-white text-xs uppercase flex flex-col'>
                     <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
                         Institucional
                     </Link>
