@@ -6,7 +6,7 @@ import { SiGmail } from "react-icons/si";
 const TopBar = () => {
   return (
     <div className='bg-gray-200 border-b-[1px] border-gray-400 px-5'>
-        <div className='max-w-5xl mx-auto flex justify-between items-center'>
+        <div className='max-w-6xl mx-auto flex justify-between items-center'>
             <ul className='flex items-center gap-2'>
                 <li className=''>
                     <Link href="#">

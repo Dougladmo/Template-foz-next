@@ -12,17 +12,17 @@ interface MidBarProps {
 const MidBar = ({ handleOnClick }: MidBarProps) => {
   return (
     <div className='bg-white w-full'>
-      <div id="mid-header" className="md:max-w-6xl md:px-3 md:mx-auto px-3 py-5 flex items-center justify-between lg:justify-center">
+      <div id="mid-header" className="md:max-w-7xl md:px-3 md:mx-auto px-3 py-5 flex items-center justify-between lg:justify-center">
         <Fade duration={1000}>
           <Image
             alt="Logo Foz advogados"
             src={'/Logo50anos.png'}
             width={300}
             height={300}
-            className="md:w-2/3 lg:w-3/4 w-44 hover:opacity-60 transition duration-500 cursor-pointer"
+            className="md:w-2/3 lg:w-full w-44 hover:opacity-60 transition duration-500 cursor-pointer"
           />
-          <nav className="flex gap-5 items-center text-gray-500 pr-2">
-            <ul className='text-gray-900 uppercase hidden lg:flex items-center gap-10 text-[13px] border-r-2 border-gray-500 pr-5 h-3'>
+          <nav className="flex gap-5 px-5 items-center text-gray-500 pr-2">
+            <ul className='text-gray-800 hover:text-blue-800 transition duration-300 uppercase hidden lg:flex items-center gap-10 text-sm border-r-2 border-gray-500 pr-5 h-3'>
               <li>
                 <Link href='#'>INSTITUCIONAL</Link>
               </li>
