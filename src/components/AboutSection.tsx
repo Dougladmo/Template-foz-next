@@ -19,7 +19,7 @@ const AboutSection = () => {
                     />
                 <div className="flex flex-col items-start md:px-10">
                     <p className="text-xs md:text-sm uppercase text-gray-700">Sobre a empresa</p>
-                    <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 text-blue-800">FOZ SOCIEDADE DE ADVOGADOS</h2>
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 text-blue-800">FOZ SOCIEDADE DE ADVOGADOS</h3>
                     <p className="text-sm lg:text-base text-justify leading-7 text-gray-900">A FOZ Sociedade de Advogados completou quarenta e quatro anos de existência. Durante esse tempo, construímos uma conduta digna de confiança, realizações, conquistas, vitórias e a consciência de que o nosso maior compromisso é estabelecer o pleno Direito.</p>
                 </div>
             </Fade>

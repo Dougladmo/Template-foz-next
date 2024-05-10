@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/Layout/Header/Header";
 import Footer from '@/components/Layout/Footer/Footer'
+import JivoChat from "@/components/Chat/JivoChat";
 
 const lato = Lato({
   weight: ['300', '400', '700'],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={lato.className}>
         <Header />
         {children}
+        <JivoChat />
         <Footer />
       </body>
     </html>
