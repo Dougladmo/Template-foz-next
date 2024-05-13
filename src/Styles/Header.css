@@ -1,0 +1,39 @@
+@media (min-width: 1024px) {
+    .hovertext {
+        position: relative;
+    }
+
+    .square {
+        color: white;
+    }
+
+    span:hover>.square {
+        color: #013148;
+        transition: 0.5s;
+    }
+
+    .hovertext:before {
+
+        content: attr(data-hover);
+        visibility: hidden;
+        width: 50px;
+        background-color: #013148;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 5px;
+        padding: 3px;
+        transition: opacity 1s ease-in-out;
+
+
+        position: absolute;
+        z-index: 1;
+        left: 25%;
+        top: 110%;
+    }
+
+    .hovertext:hover:before {
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -38,7 +38,6 @@ const BottomBar = () => {
                         <h2 className="uppercase font-bold text-2xl md:text-3xl text-center cursor-pointer">Tributário</h2>
                     </div>
                 </div>
-                {/* #133041 */}
                 <div className="w-full h-[114px] md:h-[560px] relative overflow-hidden md:rounded-l-lg">
                     <div className="absolute inset-0 bg-blue-900"></div>
                     <img

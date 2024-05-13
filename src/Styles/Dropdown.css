@@ -1,0 +1,27 @@
+.triangle-up {
+    animation: spin-up 0.5s;
+}
+
+.triangle-down {
+    animation: spin-down 0.5s;
+}
+
+@keyframes spin-down {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(180)
+    }
+}
+
+@keyframes spin-up {
+    0% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
