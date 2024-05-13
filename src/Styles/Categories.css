@@ -1,0 +1,65 @@
+/* animação de giro do quadrado do link da caixa de categorias */
+
+.link-spin {
+    animation: spin 0.3s;
+}
+
+.link-back-spin {
+    animation: back-spin 0.3s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        font-size: 5px;
+    }
+
+    20% {
+        font-size: 6px;
+    }
+
+    40% {
+        font-size: 7px;
+    }
+
+    60% {
+        font-size: 8px;
+    }
+
+    80% {
+        font-size: 9px;
+    }
+
+    100% {
+        transform: rotate(135deg);
+        font-size: 10px;
+    }
+}
+
+@keyframes back-spin {
+    0% {
+        transform: rotate(135deg);
+        font-size: 10px;
+    }
+
+    20% {
+        font-size: 9px;
+    }
+
+    40% {
+        font-size: 8px;
+    }
+
+    60% {
+        font-size: 7px;
+    }
+
+    80% {
+        font-size: 6px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        font-size: 5px;
+    }
+}
