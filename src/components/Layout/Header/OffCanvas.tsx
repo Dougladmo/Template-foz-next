@@ -1,31 +1,42 @@
 import Link from 'next/link'
 import React from 'react'
+import OffCanvasDropdown from './Dropdowns/OffCanvasDropdown'
 
 const OffCanvas = () => {
-  return (
+    return (
         <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen lg:hidden'>
-            <div className='text-white text-xs uppercase flex flex-col'>
-                    <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
-                        Institucional
-                    </Link>
-                    <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
+            <ul className='text-white text-xs uppercase flex flex-col'>
+                <li>
+                    <OffCanvasDropdown title='institucional' items={['xd', 'b', 'c']} />
+                </li>
+                <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
+                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
                         áreas de atuação
                     </Link>
-                    <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
+                </li>
+                <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
+                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
                         advogados
                     </Link>
-                    <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
+                </li>
+                <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
+                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
                         artigos
                     </Link>
-                    <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
+                </li>
+                <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
+                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
                         notícias
                     </Link>
-                    <Link href="#" className='border-b-[1px] border-gray-500 pl-2 py-5 bg-blue-800 hover:brightness-150 duration-300 transition'>
+                </li>
+                <li className='flex flex-cole justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
+                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
                         contato
                     </Link>
-            </div>
+                </li>
+            </ul>
         </div>
-  )
+    )
 }
 
 export default OffCanvas
