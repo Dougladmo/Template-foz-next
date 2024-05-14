@@ -5,7 +5,7 @@ import OffCanvasDropdown from './Dropdowns/OffCanvasDropdown'
 const OffCanvas = () => {
     return (
         <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen lg:hidden'>
-            <ul className='text-white text-xs uppercase flex flex-col'>
+            <ul className='text-white text-sm uppercase flex flex-col'>
                 <li>
                     <OffCanvasDropdown title='institucional' items={['xd', 'b', 'c']} />
                 </li>

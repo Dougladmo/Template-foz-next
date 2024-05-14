@@ -19,7 +19,7 @@ const OffCanvasDropdown = ({ title, items }: OffCanvasDropdownProps) => {
 
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className={`text-xs uppercase flex items-center gap-3 py-5 w-full pl-2 hover:translate-x-2 transition duration-500 ${isOpen && 'translate-x-2'}`}
+                    className={`text-sm uppercase flex items-center gap-3 py-5 w-full pl-2 hover:translate-x-2 transition duration-500 ${isOpen && 'translate-x-2'}`}
                 >
                     {title}
                     {isOpen ? <BsTriangleFill size={10} className='triangle-up' /> : <BsTriangleFill size={10} className='triangle-down rotate-180' />}
