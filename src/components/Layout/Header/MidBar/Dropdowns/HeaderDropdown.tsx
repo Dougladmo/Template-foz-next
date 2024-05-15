@@ -22,7 +22,7 @@ const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
                 className="flex items-center gap-2"
             >
                 {title}
-                {isOpen ? <BsTriangleFill size={10} className='triangle-up' /> : <BsTriangleFill size={10} className='triangle-down rotate-180' /> }
+                {isOpen ? <BsTriangleFill size={10} className='triangle-up-opened' /> : <BsTriangleFill size={10} className='triangle-down-closed rotate-180' /> }
             </button>
             {isOpen && (
                 <div 

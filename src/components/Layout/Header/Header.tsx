@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from 'react';
-import TopBar from './TopBar';
-import MidBar from './MidBar';
-import BottomBar from './BottomBar';
-import OffCanvas from './OffCanvas';
+import TopBar from './TopBar/TopBar';
+import MidBar from './MidBar/MidBar';
+import BottomBar from './BottomBar/BottomBar';
+import OffCanvas from './MidBar/OffCanvas';
 import { Slide } from 'react-awesome-reveal';
 
 const Header = () => {

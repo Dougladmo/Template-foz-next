@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+    .button-opened {
+        animation: button-animation-opening alternate 0.5s;
+    }
+
+    .wrapper-opened {
+        animation: wrapper-animation-opening alternate 0.5s;
+    }
+
+    .wrapper-closed {
+        animation: wrapper-animation-closing alternate 0.5s;
+    }
+
+}
+
+@keyframes button-animation-opening {
+    0% {
+        transform: translateY(40px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes wrapper-animation-opening {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-32px);
+    }
+}
+
+@keyframes wrapper-animation-closing {
+    0% {
+        transform: translateY(-32px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

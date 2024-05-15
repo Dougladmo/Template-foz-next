@@ -7,17 +7,13 @@ const OffCanvas = () => {
         <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen lg:hidden'>
             <ul className='text-white text-sm uppercase flex flex-col'>
                 <li>
-                    <OffCanvasDropdown title='institucional' items={['xd', 'b', 'c']} />
+                    <OffCanvasDropdown title='institucional' items={['história', 'valores', 'perfis de clientes', 'depoimentos', 'links úteis', 'principais termos jurídicos']} />
                 </li>
-                <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
-                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
-                        áreas de atuação
-                    </Link>
+                <li>
+                    <OffCanvasDropdown title='áreas de atuação' items={['direito administrativo', 'direito tributário', 'direito civil', 'habilitação de herdeiros']} />
                 </li>
-                <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
-                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
-                        advogados
-                    </Link>
+                <li>
+                    <OffCanvasDropdown title='advogados' items={['wilson luis de souza foz', 'antonio josé de sousa foz', 'Marcela gonçalves foz']} />
                 </li>
                 <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
                     <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
