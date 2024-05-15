@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa6";
 
 const Contact = () => {
     return (
-        <div id='contact' className='flex flex-col gap-3 max-w-[300px]'>
+        <div id='contact' className='flex flex-col gap-3 md:max-w-[200px] lg:max-w-[300px]'>
             <h4 className='text-lg uppercase'>Contato</h4>
             <div className='flex items-center gap-3'>
                 <IoLocationSharp size={12} />

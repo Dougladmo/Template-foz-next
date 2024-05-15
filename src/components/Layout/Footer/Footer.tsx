@@ -9,7 +9,7 @@ import Copyright from './Copyright'
 const Footer = () => {
   return (
     <footer className='bg-blue-800 w-full mx-auto'>
-      <div id='inner-footer' className='flex flex-col gap-3 md:flex-row md:max-w-7xl md:mx-auto md:gap-5 px-3 py-4 md:py-8 text-white'>
+      <div id='inner-footer' className='flex flex-col gap-3 md:flex-row md:justify-center md:max-w-7xl mx-auto md:gap-5 px-3 py-4 md:py-8 text-white'>
           <AboutFooter />
           <LastNews />
           <Contact />

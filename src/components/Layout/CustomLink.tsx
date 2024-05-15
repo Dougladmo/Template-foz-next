@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import '@/Styles/Categories.css'
 
-const CategoriesLink
+const CustomLink
  = ({text}: {text: string}) => {
     const [animation, setAnimation] = useState('link-back-spin text-gray-900 text-[5px]');
 
@@ -20,5 +20,5 @@ const CategoriesLink
     );
 };
 
-export default CategoriesLink
+export default CustomLink
 ;
