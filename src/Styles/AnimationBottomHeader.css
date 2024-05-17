@@ -3,6 +3,10 @@
         animation: button-animation-opening alternate 0.5s;
     }
 
+    .button-closed {
+        animation: button-animation-closing alternate 0.5s;
+    }
+
     .wrapper-opened {
         animation: wrapper-animation-opening alternate 0.5s;
     }
@@ -16,12 +20,26 @@
 @keyframes button-animation-opening {
     0% {
         transform: translateY(40px);
-        opacity: 0.5;
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes button-animation-closing {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+        display: flex;
+    }
+
+    100% {
+        transform: translateY(40px);
+        opacity: 0;
+        display: none;
     }
 }
 
@@ -31,16 +49,16 @@
     }
 
     100% {
-        transform: translateY(-32px);
+        transform: translateY(-24px);
     }
 }
 
 @keyframes wrapper-animation-closing {
     0% {
-        transform: translateY(-32px);
+        transform: translateY(-24px);
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(28px);
     }
 }
