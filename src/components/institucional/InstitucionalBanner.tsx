@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InstitucionalBanner = () => {
+const InstitucionalBanner = ({title}: {title: string}) => {
     return (
         <div className='w-full h-[161px] relative overflow-hidden rounded}' >
             <div className="absolute inset-0 bg-blue-900 transition duration-500"></div>
@@ -16,7 +16,7 @@ const InstitucionalBanner = () => {
                         <p className="uppercase font-sans text-base font-medium">institucional</p>
                         <div className="h-[1px] bg-white w-7 md:w-7 ml-3"></div>
                     </div>
-                    <h1 className="uppercase font-bold text-2xl md:text-4xl text-center cursor-pointer">história</h1>
+                    <h1 className="uppercase font-bold text-2xl md:text-4xl text-center cursor-pointer">{title}</h1>
                 </div>
             </div>
         </div>

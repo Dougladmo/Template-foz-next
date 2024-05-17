@@ -8,7 +8,7 @@ import Image from 'next/image'
 const page = () => {
     return (
         <div>
-            <InstitucionalBanner />
+            <InstitucionalBanner title='perfis de clientes' />
             <div className='md:max-w-7xl md:mx-auto p-10 text-gray-900 pb-24'>
                 <p className='mb-10 text-sm text-gray-700'><Link href='/'>Home</Link> &gt; História</p>
                 <div className='flex gap-8'>
