@@ -9,13 +9,13 @@ const page = () => {
     return (
         <div>
             <InstitucionalBanner />
-            <div className='md:max-w-7xl md:mx-auto p-10'>
+            <div className='md:max-w-7xl md:mx-auto p-10 text-gray-900 pb-24'>
                 <p className='mb-10 text-sm text-gray-700'><Link href='/'>Home</Link> &gt; História
                 </p>
                 <div className='flex gap-8'>
                     <CardLinks />
                     <div className='text-justify text-base flex flex-col gap-5'>
-                        <h2 className='text-justify text-3xl font-bold text-blue-800'>FOZ 46 ANOS – PROFISSIONALISMO, ÉTICA, IDONEIDADE E RESPEITO FAZEM PARTE DA NOSSA TRAJETÓRIA!</h2>
+                        <h2 className='text-start text-3xl font-bold text-blue-800'>FOZ 46 ANOS – PROFISSIONALISMO, ÉTICA, IDONEIDADE E RESPEITO FAZEM PARTE DA NOSSA TRAJETÓRIA!</h2>
                         <p>
 
                             <span className='italic'>“A maior herança que o meu pai me deixou foi o nome.”
