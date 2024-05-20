@@ -2,7 +2,6 @@ import React from 'react'
 import InstitucionalBanner from '@/components/institucional/InstitucionalBanner'
 import CardLinks from '@/components/institucional/CardLinks'
 import Link from 'next/link'
-import Home from '../../page'
 import Image from 'next/image'
 
 const page = () => {
