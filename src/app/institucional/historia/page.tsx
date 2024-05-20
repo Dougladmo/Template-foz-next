@@ -32,7 +32,7 @@ const page = () => {
                                 height={300}
                                 src='/historia-foz-advogados.jpg'
                                 alt='historia foz'
-                                className='mx-5 float-right'
+                                className='mx-5 float-right rounded-lg'
                             />
                             <span className='block mb-5 text-justify'>
                                 A nossa história começou em janeiro de 1972, de forma tímida, reunindo experiências de dois advogados que, com sabedoria, transformaram o escritório em um dos mais conceituados no segmento das áreas do Direito Administrativo, Cível e Tributário.
