@@ -6,7 +6,7 @@ import '@/Styles/Dropdown.css'
 
 type HeaderDropdownProps = {
     title: string;
-    items: string[];
+    items: Object[];
 };
 
 const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
@@ -60,10 +60,10 @@ const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
                     {items.map((item, index) => (
                         <a
                             key={index}
-                            href="#"
+                            href={`${item.link}`}
                             className="block px-4 py-2 text-gray-800 hover:text-blue-800"
                         >
-                            {item}
+                            {item.title}
                         </a>
                     ))}
                 </div>
