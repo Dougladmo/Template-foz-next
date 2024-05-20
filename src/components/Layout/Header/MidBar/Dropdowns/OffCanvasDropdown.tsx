@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 type OffCanvasDropdownProps = {
     title: string;
-    items: string[];
+    items: Object[];
 };
 
 const OffCanvasDropdown = ({ title, items }: OffCanvasDropdownProps) => {
@@ -29,8 +29,8 @@ const OffCanvasDropdown = ({ title, items }: OffCanvasDropdownProps) => {
                 <ul className='text-white text-xs uppercase flex flex-col'>
                     {items.map((item, index) => (
                         <li key={index} className='flex flex-col justify-start border-b-[1px] border-gray-500 duration-300 transition bg-blue-800 hover:brightness-150'>
-                            <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
-                                {item}
+                            <Link href={`${item.link}`} className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
+                                {item.title}
                             </Link>
                         </li>
                     ))}

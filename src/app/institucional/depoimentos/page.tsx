@@ -9,7 +9,7 @@ const page = () => {
     return (
         <div>
             <InstitucionalBanner title='depoimentos' />
-            <div className='md:max-w-7xl md:mx-auto p-10 text-gray-900 pb-24 text-justify'>
+            <div className='md:max-w-7xl md:mx-auto px-5 py-10 md:p-10 text-gray-900 pb-24 text-justify'>
                 <p className='mb-10 text-sm text-gray-700'><Link href='/'>Home</Link> &gt; Depoimentos </p>
                 <div className='flex gap-8'>
                     <CardLinks />
