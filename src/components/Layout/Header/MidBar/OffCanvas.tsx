@@ -16,7 +16,9 @@ const OffCanvas = () => {
                     <OffCanvasDropdown title='áreas de atuação' items={areasAtuacaoPages} />
                 </li>
                 <li>
-                    <OffCanvasDropdown title='advogados' items={['wilson luis de souza foz', 'antonio josé de sousa foz', 'Marcela gonçalves foz']} />
+                    <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
+                        Advogados
+                    </Link>
                 </li>
                 <li className='flex flex-col justify-start border-b-[1px] border-gray-500 hover:bg-blue-900 duration-300 transition'>
                     <Link href="#" className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
