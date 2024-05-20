@@ -2,11 +2,16 @@
 import { useState, useRef } from 'react';
 import { BsTriangleFill } from 'react-icons/bs';
 
-import '@/Styles/Dropdown.css'
+import '@/Styles/Dropdown.css';
+
+interface DropdownItem {
+    title: string;
+    link: string;
+}
 
 type HeaderDropdownProps = {
     title: string;
-    items: Object[];
+    items: DropdownItem[];
 };
 
 const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
@@ -23,7 +28,7 @@ const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
     const handleMouseLeave = () => {
         closeTimer = setTimeout(() => {
             setIsOpen(false);
-        }, 200); // tempo de atraso ao tirar o mouse do dropdown
+        }, 100); // tempo de atraso ao tirar o mouse do dropdown
     };
 
     const handleDropdownMouseEnter = () => {
@@ -34,7 +39,7 @@ const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
     const handleDropdownMouseLeave = () => {
         closeTimer = setTimeout(() => {
             setIsOpen(false);
-        }, 200); // tempo de atraso ao tirar o mouse do dropdown
+        }, 100); // tempo de atraso ao tirar o mouse do dropdown
     };
 
     return (
@@ -60,7 +65,7 @@ const HeaderDropdown = ({ title, items }: HeaderDropdownProps) => {
                     {items.map((item, index) => (
                         <a
                             key={index}
-                            href={`${item.link}`}
+                            href={item.link}
                             className="block px-4 py-2 text-gray-800 hover:text-blue-800"
                         >
                             {item.title}
