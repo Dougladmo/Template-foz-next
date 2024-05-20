@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import TopBar from './TopBar/TopBar';
 import MidBar from './MidBar/MidBar';
-import BottomBar from './BottomBar/BottomBar';
 import OffCanvas from './MidBar/OffCanvas';
 import { Slide } from 'react-awesome-reveal';
 
@@ -29,7 +28,6 @@ const Header = () => {
       <div className='relative z-10'>
         <MidBar handleOnClick={toggleOffCanvas} />
       </div>
-      <BottomBar />
     </header>
   );
 };

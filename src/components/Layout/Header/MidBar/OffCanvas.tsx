@@ -1,16 +1,19 @@
 import Link from 'next/link'
 import React from 'react'
+
 import OffCanvasDropdown from './Dropdowns/OffCanvasDropdown'
+import { institucionalPages } from './Dropdowns/Links'
+import { areasAtuacaoPages } from './Dropdowns/Links'
 
 const OffCanvas = () => {
     return (
         <div className='fixed left-0 z-30 bg-blue-800 w-2/3 h-screen lg:hidden'>
             <ul className='text-white text-sm uppercase flex flex-col'>
                 <li>
-                    <OffCanvasDropdown title='institucional' items={['história', 'valores', 'perfis de clientes', 'depoimentos', 'links úteis', 'principais termos jurídicos']} />
+                    <OffCanvasDropdown title='institucional' items={institucionalPages} />
                 </li>
                 <li>
-                    <OffCanvasDropdown title='áreas de atuação' items={['direito administrativo', 'direito tributário', 'direito civil', 'habilitação de herdeiros']} />
+                    <OffCanvasDropdown title='áreas de atuação' items={areasAtuacaoPages} />
                 </li>
                 <li>
                     <OffCanvasDropdown title='advogados' items={['wilson luis de souza foz', 'antonio josé de sousa foz', 'Marcela gonçalves foz']} />

@@ -2,8 +2,8 @@ import React from 'react'
 
 const NewsLetter = () => {
     return (
-        <div id='newsLetter' className='flex flex-col gap-3 md:max-w-[200px] lg:max-w-[300px]'>
-            <h4 className='text-lg uppercase'>Newsletter</h4>
+        <div id='newsLetter' className='flex flex-col gap-3 md:max-w-[375px] lg:min-w-[250px]'>
+            <h4 className='text-lg uppercase md:text-2xl'>Newsletter</h4>
             <form className='grid grid-cols-3 grid-rows-2 gap-2'>
                 <input className="col-span-3 indent-2 py-2 border-[1px] border-white bg-transparent rounded-lg" type="email" placeholder='Digite seu e-mail' id='email' name='email' required />
                 <input className="col-span-2 indent-2 py-2 border-[1px] border-white bg-transparent rounded-lg" type="name" placeholder='Digite seu nome' id='name' name='name' required />
