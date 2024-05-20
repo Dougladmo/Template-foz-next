@@ -1,13 +1,18 @@
 // components/OffCanvasDropdown.tsx
 import { useState } from 'react';
 import { BsTriangleFill } from 'react-icons/bs';
-
-import '@/Styles/Dropdown.css'
 import Link from 'next/link';
+
+import '@/Styles/Dropdown.css';
+
+interface DropdownItem {
+    title: string;
+    link: string;
+}
 
 type OffCanvasDropdownProps = {
     title: string;
-    items: Object[];
+    items: DropdownItem[];
 };
 
 const OffCanvasDropdown = ({ title, items }: OffCanvasDropdownProps) => {
@@ -16,7 +21,6 @@ const OffCanvasDropdown = ({ title, items }: OffCanvasDropdownProps) => {
     return (
         <div>
             <div className={`border-b-[1px] bg-blue-800 hover:brightness-150 ${isOpen && 'brightness-150'}`}>
-
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className={`text-sm uppercase flex items-center gap-3 py-5 w-full pl-2 hover:translate-x-2 transition duration-500 ${isOpen && 'translate-x-2'}`}
@@ -29,7 +33,7 @@ const OffCanvasDropdown = ({ title, items }: OffCanvasDropdownProps) => {
                 <ul className='text-white text-xs uppercase flex flex-col'>
                     {items.map((item, index) => (
                         <li key={index} className='flex flex-col justify-start border-b-[1px] border-gray-500 duration-300 transition bg-blue-800 hover:brightness-150'>
-                            <Link href={`${item.link}`} className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
+                            <Link href={item.link} className='py-5 w-full pl-2 hover:translate-x-2 transition duration-500'>
                                 {item.title}
                             </Link>
                         </li>
