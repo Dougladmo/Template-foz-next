@@ -9,9 +9,9 @@ const CardLinks = () => {
                 <CustomLink link='/historia' text='História' />
                 <CustomLink link='#' text='Valores' />
                 <CustomLink link='perfis-de-clientes' text='Perfis de clientes' />
-                <CustomLink link='#' text='Depoimentos' />
+                <CustomLink link='/depoimentos' text='Depoimentos' />
                 <CustomLink link='#' text='Links úteis' />
-                <CustomLink link='#' text='Principais termos jurídicos' />
+                <CustomLink link='/principais-termos-juridicos' text='Principais termos jurídicos' />
             </div>
         </div>
     )
