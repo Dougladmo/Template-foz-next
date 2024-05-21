@@ -18,7 +18,8 @@ const page = () => {
                 <div className='flex gap-8'>
                     <CardLinks />
                     <div className='w-full flex flex-col gap-8'>
-                        <h2 className='text-start text-3xl font-bold text-blue-800'>"O CULTIVO DE NOSSAS IDEIAS"</h2>
+                        <h2 className='text-start text-3xl font-bold text-blue-800'>&quot;O CULTIVO DE NOSSAS IDEIAS&quot;</h2>
+
                         <CardValoresMissao />
                         <CardValoresvisao />
                         <CardValoresRazao />
