@@ -30,8 +30,8 @@ const LinksUteisDropdown = ({title, items}: LinksDropdownProps) => {
             {isActive ?
                 (
                     <ul className='dropdown-opened flex flex-col bg-[#003B53] text-white p-6 gap-3 rounded-b-lg'>
-                        {items.map((item) => (
-                            <li>
+                        {items.map((item, index) => (
+                            <li key={index}>
                                 <LinkInteresse title={item.title} link={item.link}/>
                             </li>
                         ))}
