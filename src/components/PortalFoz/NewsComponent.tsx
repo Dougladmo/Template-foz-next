@@ -21,13 +21,13 @@ const NewsComponent = ({ date, title, link, img }: NewsComponentProps) => {
             alt='imagem da noticia'
             width={100}
             height={100}
-            className='transition duration-300 rounded-lg hover:opacity-70 md:flex hidden'
+            className='hidden transition duration-300 rounded-lg hover:opacity-70 md:flex'
           />
         </Link>
         <div className='flex flex-col gap-1'>
-          <p className="text-xs uppercase text-gray-700">{date}</p>
-          <Link href={link} className='text-base md:text-sm text-blue-800 hover:opacity-60 transition duration-300'>{title}</Link>
-          <Link href='#' className="text-xs uppercase text-gray-700">Notícias Gerais</Link>
+          <p className="text-xs text-gray-700 uppercase">{date}</p>
+          <Link href={link} className='text-base text-blue-800 transition duration-300 md:text-sm hover:opacity-60'>{title}</Link>
+          <Link href='#' className="text-xs text-gray-700 uppercase">Notícias Gerais</Link>
         </div>
       </Fade>
     </div>
