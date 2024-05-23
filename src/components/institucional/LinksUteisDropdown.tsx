@@ -14,15 +14,18 @@ type LinkItem = {
 
 type LinksDropdownProps = {
     title: string;
+    customClass: string;
     items: LinkItem[];
 }
 
-const LinksUteisDropdown = ({title, items}: LinksDropdownProps) => {
+const LinksUteisDropdown = ({title, items, customClass}: LinksDropdownProps) => {
     const [ isActive, setIsActive ] = useState(false)
+
+    // ${isActive ? 'rounded-t-lg' : 'rounded-lg' }
 
     return (
         <div>
-            <div onClick={() => setIsActive(!isActive)} className={`flex items-center justify-between w-full px-6 py-3 text-white bg-blue-800 cursor-pointer ${isActive ? 'rounded-t-lg' : 'rounded-lg' } `}>
+            <div onClick={() => setIsActive(!isActive)} className={`flex items-center justify-between w-full px-6 py-3 text-white bg-blue-800 cursor-pointer ${customClass} ${isActive ? 'rounded-b-none' : ''}`}>
 
                 <h3 className='text-xl font-bold uppercase'>{title}</h3>
                 {isActive ? <hr className='w-3 h-1 bg-white' /> : <ImPlus size={15} className='text-white' />}

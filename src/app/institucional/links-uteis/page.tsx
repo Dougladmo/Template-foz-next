@@ -18,9 +18,9 @@ const page = () => {
             <div className='relative flex flex-col w-2/3 gap-8'>
               <h2 className='text-4xl font-bold text-blue-800 uppercase text-start'>Sites de interesse</h2>
               <div className='flex flex-col gap-1'>
-                <LinksUteisDropdown items={sitesInteresseGov} title='gorverno' />
-                <LinksUteisDropdown items={sitesInteresseLeisPublicas} title='consulta às leis de publicações jurídicas' />
-                <LinksUteisDropdown items={sitesInteresseOutros} title='outros' />
+                <LinksUteisDropdown customClass='rounded-t-lg' items={sitesInteresseGov} title='gorverno' />
+                <LinksUteisDropdown customClass='rounded-none' items={sitesInteresseLeisPublicas} title='consulta às leis de publicações jurídicas' />
+                <LinksUteisDropdown customClass='rounded-b-lg' items={sitesInteresseOutros} title='outros' />
               </div>
             </div>
         </div>
