@@ -36,7 +36,7 @@ export const areasAtuacaoPages = [
     },
     {
         title: "Direito civil",
-        link: "/areas-atuacaoDireito-civil",
+        link: "/areas-atuacao/direito-civil",
     },
     {
         title: "habilitação de herdeiros",
